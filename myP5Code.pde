@@ -41,10 +41,9 @@ triangle(LirisX,350,10,20)
 fill(0,0,0)
 triangle(RirisX,350,10,10)
 
-monsterSize = monsterSize + 5
+monsterSize = random(10,90);
 ReyeX = ReyeX + 19
 LeyeX = LeyeX + 15
-
 RirisX = RirisX + 200
 LirisX = LirisX + 40
   if(mousePressed){showXYPositions();}
