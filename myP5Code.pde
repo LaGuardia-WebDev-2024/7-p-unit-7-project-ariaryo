@@ -5,18 +5,48 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 
+var monsterSize = 30;
+var teethsize = 35;
+var ReyeX = 10;
+var Leyex = 20;
+var RirisX = 10;
+var LirisX = 20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
+ nostroke();
   background(255,255,255,0);
   
+// the monster
+fill ();
+ellipse(200,298,monsterSize,monsterSize);
+
+// left eye
+fill(255,255,255)
+ellipse(LeyeX,350,20,10)
+
+// right eye
+fill(255,255,255)
+ellipse(ReyeX,350,10,10)
 
 
+rect(185,200,15,teethSize); // left tooth
+rect(185,200,15,teethSize); // right tooth
 
+// Left Iris
+fill(0,0,0)
+triangle(LirisX,350,10,20)
 
+// Right Iris
+fill(0,0,0)
+triangle(RirisX,350,10,10)
 
+monsterSize = monsterSize + 5
+ReyeX = ReyeX + 19
+LeyeX = LeyeX + 15
 
+RirisX = RirisX + 200
+LirisX = LirisX + 40
   if(mousePressed){showXYPositions();}
 
 }
