@@ -5,16 +5,16 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 
-var monsterSize = 30;
-var teethsize = 35;
-var ReyeX = 180;
-var LeyeX = 220;
+var monsterSize = 250;
+var teethSize = 35;
+var ReyeX = 100;
+var LeyeX = 300;
 var RirisX = 180;
 var LirisX = 220;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- nostroke();
+ noStroke();
   background(255,255,255,0);
   
 // the monster
@@ -23,11 +23,11 @@ ellipse(200,298,monsterSize,monsterSize);
 
 // left eye
 fill(255, 255, 255);
-ellipse(LeyeX, 298, 20, 10);
+ellipse(LeyeX, 298, 75, 50);
 
 // right eye
 fill(255, 255, 255);
-ellipse(ReyeX, 298, 20, 10);
+ellipse(ReyeX, 298, 75, 50);
 
 stroke(0);
 strokeWeight(2);
@@ -37,11 +37,11 @@ nostroke();
 
 // Left Iris
 fill(0, 0, 0);
-triangle(LirisX, 298, 216, 294, 224, 294);
+circle(LirisX, 298, 216);
 
 // Right Iris
 fill(0, 0, 0);
-triangle(RirisX, 298, 176, 294, 184, 294);
+circle(RirisX, 298, 176);
 
 monsterSize = random(10, 90);
 ReyeX = 180;
