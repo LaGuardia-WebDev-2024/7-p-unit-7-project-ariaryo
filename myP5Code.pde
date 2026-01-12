@@ -37,11 +37,11 @@ nostroke();
 
 // Left Iris
 fill(0, 0, 0);
-triangle(LirisX, 298, 8, 8);
+triangle(LirisX, 298, 216, 294, 224, 294);
 
 // Right Iris
 fill(0, 0, 0);
-triangle(RirisX, 298, 8, 8);
+triangle(RirisX, 298, 176, 294, 184, 294);
 
 monsterSize = random(10, 90);
 ReyeX = 180;
