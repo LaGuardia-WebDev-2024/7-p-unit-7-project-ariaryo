@@ -21,6 +21,10 @@ void draw(){
 fill (255,16,240);
 ellipse(200,298,monsterSize,monsterSize);
 
+// nose
+fill(0, 0, 0);
+triangle(200, 280, 190, 300, 210, 300);
+
 // left eye
 fill(255, 255, 255);
 ellipse(LeyeX, 298, 75, 50);
@@ -32,7 +36,7 @@ ellipse(ReyeX, 298, 75, 50);
 stroke(0);
 strokeWeight(2);
 rect(185, 320, 15, teethSize); // left tooth
-rect(220, 320, 15, teethSize); // right tooth
+rect(200, 320, 15, teethSize); // right tooth
 noStroke();
 
 // Left Iris
@@ -43,7 +47,7 @@ ellipse(LirisX, 298, 10, 10);
 fill(0, 0, 0);
 ellipse(RirisX, 298, 10, 10);
 
-monsterSize = random(10, 90);
+monsterSize = random(50, 250);
 ReyeX = 180;
 LeyeX = 220;
 RirisX = 180;
