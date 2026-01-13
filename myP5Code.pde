@@ -5,15 +5,15 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 
-var monsterSize = 250;
-var teethSize = 35;
-var ReyeX = 100;
-var LeyeX = 300;
-var RirisX = 180;
-var LirisX = 220;
+int monsterSize = 250;
+int teethSize = 35;
+int ReyeX = 100;
+int LeyeX = 300;
+int RirisX = 180;
+int LirisX = 220;
 
 //🟢Draw Procedure - Runs on Repeat
-draw = function(){
+void draw(){
  noStroke();
   background(255,255,255,0);
   
@@ -33,15 +33,15 @@ stroke(0);
 strokeWeight(2);
 rect(185, 320, 15, teethSize); // left tooth
 rect(220, 320, 15, teethSize); // right tooth
-nostroke();
+noStroke();
 
 // Left Iris
 fill(0, 0, 0);
-circle(LirisX, 298, 216);
+ellipse(LirisX, 298, 10, 10);
 
 // Right Iris
 fill(0, 0, 0);
-circle(RirisX, 298, 176);
+ellipse(RirisX, 298, 10, 10);
 
 monsterSize = random(10, 90);
 ReyeX = 180;
@@ -55,7 +55,7 @@ LirisX = 220;
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
 
-showXYPositions = function(){
+void showXYPositions(){
     fill(255,255,255,200);
     rect(470,320,150,100,10);
     fill(0,0,0);
